@@ -40,7 +40,7 @@ jobs:
             . 
             !venv/
 
-  deploy:
+   deploy:
     runs-on: ubuntu-latest
     needs: build
     environment:
@@ -58,6 +58,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'vtm-tank-new'
+          app-name: 'vtm-tank77'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A9DBB47FC795401592D5E6BB08C8413C }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_AF822EFF447F452BB339D5EF02D4AE33 }}
